@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# dotfiles = location of config repo
-DIR="$HOME/dotfiles/"
-FILES=$(ls -pa $DIR | grep -Ev '(/|*\.sh)')
+# dotfiles = name of config directory with git repository
+DIR="dotfiles/"
 PREVIOUS=$(pwd)
 
-cd $DIR
+cd $HOME && cd $DIR
 git pull
+FILES=$(ls -pa | grep -Ev '(/|*\.sh)')
 cp -vfut $HOME $FILES
 cd $PREVIOUS
