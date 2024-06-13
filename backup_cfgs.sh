@@ -5,6 +5,7 @@ PREVIOUS=$(pwd)
 DATE=$(date)
 
 cd $HOME
+# Include all the config files you want to back up after $DIR
 cp -vfut $DIR .vimrc .aliases .bashrc .zshrc
 cd $DIR
 git add .

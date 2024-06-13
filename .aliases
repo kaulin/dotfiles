@@ -4,11 +4,9 @@ alias update_cfgs="bash $HOME/dotfiles/update_cfgs.sh"
 
 # edit command = nvim
 alias edit="nvim"
-compdef edit=nvim
 
 # set up aliases for flatpak neovim
 alias nvim="flatpak run io.neovim.nvim"
-compdef nvim=nvim
 
 # Navigate p number of directories up
 alias up="cd .."
