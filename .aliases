@@ -1,0 +1,25 @@
+# backup and update configs
+alias backup_cfgs="bash $HOME/dotfiles/backup_cfgs.sh"
+alias update_cfgs="bash $HOME/dotfiles/update_cfgs.sh"
+
+# edit command = nvim
+alias edit="nvim"
+compdef edit=nvim
+
+# set up aliases for flatpak neovim
+alias nvim="flatpak run io.neovim.nvim"
+compdef nvim=nvim
+
+# Navigate p number of directories up
+alias up="cd .."
+alias upp="cd ../.."
+alias uppp="cd ../../.."
+
+# Make parent directories on demand
+alias mkdir='mkdir -pv'
+
+# Compile with flags
+alias compile="cc #Wall #Wextra #Werror"
+
+# Reload terminal
+alias reload="source ~/.zshrc"
