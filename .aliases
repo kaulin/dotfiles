@@ -2,10 +2,9 @@
 alias dotfiles_backup="bash $HOME/dotfiles/dotfiles_backup.sh"
 alias dotfiles_update="bash $HOME/dotfiles/dotfiles_update.sh"
 
-# edit command = nvim
-alias edit="nvim"
-
-# set up aliases for flatpak neovim
+# Aliases for text editors and IDEs
+alias edit="vim"
+alias code=”flatpak run com.visualstudio.code”
 alias nvim="flatpak run io.neovim.nvim"
 
 # Navigate p number of directories up
