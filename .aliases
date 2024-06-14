@@ -4,7 +4,7 @@ alias dotfiles_update="bash $HOME/dotfiles/dotfiles_update.sh"
 
 # Aliases for text editors and IDEs
 alias edit="vim"
-alias code=”flatpak run com.visualstudio.code”
+alias code="flatpak run com.visualstudio.code"
 alias nvim="flatpak run io.neovim.nvim"
 
 # Navigate p number of directories up
