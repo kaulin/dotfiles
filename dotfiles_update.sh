@@ -6,6 +6,6 @@ PREVIOUS=$(pwd)
 
 cd $HOME && cd $DIR
 git pull
-FILES=$(cat dotfiles_backup.sh | grep FILES= | cut -d= -f2)
+FILES=$(cat dotfiles_backup.sh | grep FILES= | cut -d\" -f2)
 cp -vfut $HOME $FILES
 cd $PREVIOUS
