@@ -1,6 +1,6 @@
 # backup and update configs
-alias backup_cfgs="bash $HOME/dotfiles/backup_cfgs.sh"
-alias update_cfgs="bash $HOME/dotfiles/update_cfgs.sh"
+alias dotfiles_backup="bash $HOME/dotfiles/dotfiles_backup.sh"
+alias dotfiles_update="bash $HOME/dotfiles/dotfiles_update.sh"
 
 # edit command = nvim
 alias edit="nvim"
